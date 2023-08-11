@@ -64,6 +64,9 @@
 .specialties h1,h3{
   color: #002934;
 }
+.color-custom{
+  color: #fa6464;
+}
 .bg-custom{
   background-color: #fa6464;
 }

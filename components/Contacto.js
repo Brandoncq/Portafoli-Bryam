@@ -16,7 +16,7 @@ function load(){
                         </p>
                     </div>
                     <div class="col">
-                    <div class="bg-dark text-white p-3 m-2">
+                    <div class="text-white p-3 m-2">
                         <h1 class="text-center text-white">Texto Centrado</h1>
                         <form id="contactform" action="https://formsubmit.co/davis036@hotmail.com" method="POST">
                             <div class="mb-3">

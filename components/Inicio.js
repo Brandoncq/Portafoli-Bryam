@@ -9,199 +9,198 @@ const main = document.querySelector("main")
 function load(textoTitulo,textoContenido,Imagen_1,Imagen_2,Imagen_3){
     const contenido= `
     <div class="stage">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 col-6">
-                <br>
-                <div class="d-flex align-items-center align-items-md-start">
-                    <div class="d-flex align-items-center logo">
-                        <img src="https://drive.google.com/uc?id=1hOmjt7w2Ae4QWKRhCTZ32V8pLSrEwce2" alt="" class="img-fluid fs-1 me-md-3 mb-3 mb-md-0" style="max-width: 150px; height: auto;">
-                        <div>
-                            <h1 class="text-dark mb-0">TALVEZARQUITECTOS</h1>
-                            <p class="text-dark">UN ESPACIO PROPIO</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-6">
+                        <div class="d-flex align-items-center align-items-md-start">
+                            <div class="d-flex align-items-center logo">
+                                <img src="https://drive.google.com/uc?id=1hOmjt7w2Ae4QWKRhCTZ32V8pLSrEwce2" alt="" class="img-fluid fs-3 me-md-3 mb-3 mb-md-0" style="max-width: 150px; height: auto;">
+                                <div>
+                                    <h1 class="text-dark mb-0">TALVEZARQUITECTOS</h1>
+                                    <p class="color-custom">UN ESPACIO PROPIO</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<br>
-<br>
-
-<!--Especialidades-->
-    <div class="specialties">
-        <div class="container mt-5 mb-5">
-            <div class="row">
-                <h3 class="text-center">NUESTROS TRABAJOS</h3>
-                <div class="col">
-                    <div class="d-flex align-items-center justify-content-center">
-                        <i class='bx bx-home'></i>  
-                    </div>
-                    <h1 class="text-center">PROYECTOS DE ARQUITECTURA</h1>
-                    <p class="text-center">Este es un ejemplo de texto centrado en un div.
-                        Lorem ipsum dolor sit amet conses
-                    </p>
-                </div>
-                <div class="col">
-                    <div class="d-flex align-items-center justify-content-center">
-                        <i class='bx bx-cube' ></i>
-                    </div>
-                    <h1 class="text-center">RENDERIZACION ALGO MAS</h1>
-                    <p class="text-center">Este es un ejemplo de texto centrado en un div.
-                        Lorem ipsum dolor sit amet conses
-                    </p>
-                </div>
-                <div class="col">
-                    <div class="d-flex align-items-center justify-content-center">
-                        <i class='bx bx-pen' ></i>
-                    </div>
-                    <h1 class="text-center">PROYECTOS DE DISEÑOS</h1>
-                    <p class="text-center">Este es un ejemplo de texto centrado en un div.
-                        Lorem ipsum dolor sit amet conses
-                    </p>
-                </div>
-        </div>
-    </div>
-    <br>
-    <br>
-    <div class="imagenes-carrusel p-6">
-        <div class="container ">
-            <div class="row">
-                <div class="col-lg-6 col-12 m-6 p-6 d-flex align-items-center justify-content-center">
-                    
-
-                    <div class="container ">
-                        <div class="container">
-                        <h1 class="text-center">Atlas</h1>
-                        <p class="text-center">
-                            I swear I did I tried
-                            I swear I did
-                            A thousand times to let it lie
-                            A thousand times to let it lie
-                            I swear I did I tried
-                            I swear I did
-                            A thousand times to let it lie
-                            A thousand times to let it lie
-                        </p>
-                        </div>
-                    </div>
-
-                    
-                </div>
-                <div class="col-lg-6 col-12">
-                    <div class="container">
-                        <div id="carouselExample" class="carousel slide">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="https://mir-s3-cdn-cf.behance.net/projects/808/d617d2177155837.Y3JvcCwxNDAwLDEwOTUsMCwyMjg.jpg" class="d-block img-carousel" alt="..." data-bs-toggle="modal" data-bs-target="#fullscreenModal">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="https://mir-s3-cdn-cf.behance.net/projects/808/1688be177151651.Y3JvcCwxMjY1LDk4OSwwLDMxNg.jpg" class="d-block img-carousel" alt="..." data-bs-toggle="modal" data-bs-target="#fullscreenModal">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="https://mir-s3-cdn-cf.behance.net/projects/808/5b75d1177021335.Y3JvcCwxOTk5LDE1NjQsMCwyMTc.jpg" class="d-block img-carousel" alt="..." data-bs-toggle="modal" data-bs-target="#fullscreenModal">
-                                </div>
+        <br>
+        <br>
+        
+        <!--Especialidades-->
+            <div class="specialties">
+                <div class="container mt-5 mb-5">
+                    <div class="row">
+                        <h3 class="text-center">NUESTROS TRABAJOS</h3>
+                        <div class="col">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <i class='bx bx-home'></i>  
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                            </button>
+                            <h1 class="text-center">PROYECTOS DE ARQUITECTURA</h1>
+                            <!--p class="text-center">Este es un ejemplo de texto centrado en un div.
+                                Lorem ipsum dolor sit amet conses
+                            </p-->
                         </div>
-                    </div>
+                        <div class="col">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <i class='bx bx-cube' ></i>
+                            </div>
+                            <h1 class="text-center">RENDERIZACION</h1>
+                            <!--p class="text-center">Este es un ejemplo de texto centrado en un div.
+                                Lorem ipsum dolor sit amet conses
+                            </p-->
+                        </div>
+                        <div class="col">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <i class='bx bx-pen' ></i>
+                            </div>
+                            <h1 class="text-center">PROYECTOS DE DISEÑOS</h1>
+                            <!--p class="text-center">Este es un ejemplo de texto centrado en un div.
+                                Lorem ipsum dolor sit amet conses
+                            </p-->
+                        </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <br>
-    <br>
-<div class="box-content">
-    <br>
-    <!-- Modal en pantalla completa -->
-    <div class="modal fade" id="fullscreenModal" tabindex="-1" aria-labelledby="fullscreenModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <div id="fullscreenCarousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="https://mir-s3-cdn-cf.behance.net/projects/808/d617d2177155837.Y3JvcCwxNDAwLDEwOTUsMCwyMjg.jpg" class="d-block img-carousel img-fluid " alt="...">
+            <br>
+            <br>
+            <div class="imagenes-carrusel p-6">
+                <div class="container ">
+                    <div class="row">
+                        <div class="col-lg-6 col-12 m-6 p-6 d-flex align-items-center justify-content-center">
+                            
+
+                            <div class="container">
+                                <div class="container content-caruosel">
+                                    <h1 class="text-center">Atlas</h1>
+                                    <p class="text-center">
+                                        I swear I did I tried
+                                        I swear I did
+                                        A thousand times to let it lie
+                                        A thousand times to let it lie
+                                        I swear I did I tried
+                                        I swear I did
+                                        A thousand times to let it lie
+                                        A thousand times to let it lie
+                                    </p>
+                                </div>
                             </div>
-                            <div class="carousel-item">
-                                <img src="https://mir-s3-cdn-cf.behance.net/projects/808/1688be177151651.Y3JvcCwxMjY1LDk4OSwwLDMxNg.jpg" class="d-block img-carousel img-fluid " alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://mir-s3-cdn-cf.behance.net/projects/808/5b75d1177021335.Y3JvcCwxOTk5LDE1NjQsMCwyMTc.jpg" class="d-block img-carousel img-fluid " alt="..." >
-                            </div>
+
+                            
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#fullscreenCarousel" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#fullscreenCarousel" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                            </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <!--Mensaje-->
-    <div class="container">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <!-- Contenido del contenedor superpuesto arriba a la izquierda -->
-                    <h1 class="text-center text-white">Contactos</h1>
-                    <p class="text-center text-white">
-                        talvezarquitectos@gmail.com
-                    </p>
-                </div>
-                <div class="col">
-                    <!-- Contenido del contenedor superpuesto abajo a la derecha -->
-                    <div class="text-white p-3 box-shadow">
-                        <form id="contactform" action="https://formsubmit.co/davis036@hotmail.com" method="POST">
-                            <div class="mb-3">
-                                <div class="row">
-                                    <div class="col">
-                                        <label for="exampleInputEmail1" class="form-label">First Name</label>
-                                        <input type="text" class="form-control" placeholder="" aria-label="First name">
+                        <div class="col-lg-6 col-12">
+                            <div class="container">
+                                <div id="carouselExample" class="carousel slide">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="https://mir-s3-cdn-cf.behance.net/projects/808/d617d2177155837.Y3JvcCwxNDAwLDEwOTUsMCwyMjg.jpg" class="d-block img-carousel" alt="..." data-bs-toggle="modal" data-bs-target="#fullscreenModal">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://mir-s3-cdn-cf.behance.net/projects/808/1688be177151651.Y3JvcCwxMjY1LDk4OSwwLDMxNg.jpg" class="d-block img-carousel" alt="..." data-bs-toggle="modal" data-bs-target="#fullscreenModal">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://mir-s3-cdn-cf.behance.net/projects/808/5b75d1177021335.Y3JvcCwxOTk5LDE1NjQsMCwyMTc.jpg" class="d-block img-carousel" alt="..." data-bs-toggle="modal" data-bs-target="#fullscreenModal">
+                                        </div>
                                     </div>
-                                    <div class="col">
-                                        <label for="exampleInputEmail1" class="form-label">Last Name</label>
-                                        <input type="text" class="form-control" placeholder="" aria-label="Last name">
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+        <div class="box-content">
+            <br>
+            <!-- Modal en pantalla completa -->
+            <div class="modal fade" id="fullscreenModal" tabindex="-1" aria-labelledby="fullscreenModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div id="fullscreenCarousel" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="https://mir-s3-cdn-cf.behance.net/projects/808/d617d2177155837.Y3JvcCwxNDAwLDEwOTUsMCwyMjg.jpg" class="d-block img-carousel img-fluid " alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://mir-s3-cdn-cf.behance.net/projects/808/1688be177151651.Y3JvcCwxMjY1LDk4OSwwLDMxNg.jpg" class="d-block img-carousel img-fluid " alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://mir-s3-cdn-cf.behance.net/projects/808/5b75d1177021335.Y3JvcCwxOTk5LDE1NjQsMCwyMTc.jpg" class="d-block img-carousel img-fluid " alt="..." >
                                     </div>
                                 </div>
-                                <br>
-                                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                <br>
-                                <label for="exampleInputEmail1" class="form-label">Mensaje</label>
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                                        <!--label for="floatingTextarea2">Comments</label-->
-                                </div>
-                                <br>
-                                <button type="submit" class="btn btn-secondary">Enviar</button>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#fullscreenCarousel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#fullscreenCarousel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                    </button>
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-<br>
-<br>
-</div>`
+            <br>
+            <br>
+            <br>
+            <br>
+            <!--Mensaje-->
+            <div class="container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <!-- Contenido del contenedor superpuesto arriba a la izquierda -->
+                            <h1 class="text-center text-white">Contactos:</h1>
+                            <p class="text-center text-white">
+                                talvezarquitectos@gmail.com
+                            </p>
+                        </div>
+                        <div class="col">
+                            <!-- Contenido del contenedor superpuesto abajo a la derecha -->
+                            <div class="text-white p-3 box-shadow">
+                                <form id="contactform" action="https://formsubmit.co/davis036@hotmail.com" method="POST">
+                                    <div class="mb-3">
+                                        <div class="row">
+                                            <div class="col">
+                                                <label for="exampleInputEmail1" class="form-label">Nombres:</label>
+                                                <input type="text" class="form-control" placeholder="" aria-label="First name">
+                                            </div>
+                                            <div class="col">
+                                                <label for="exampleInputEmail1" class="form-label">Apellidos:</label>
+                                                <input type="text" class="form-control" placeholder="" aria-label="Last name">
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <label for="exampleInputEmail1" class="form-label">Email:</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        <br>
+                                        <label for="exampleInputEmail1" class="form-label">Mensaje:</label>
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                                                <!--label for="floatingTextarea2">Comments</label-->
+                                        </div>
+                                        <br>
+                                        <button type="submit" class="btn btn-secondary">Enviar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <br>
+        <br>
+        </div>`
     return contenido
 }
 button.addEventListener('click',e=>{
