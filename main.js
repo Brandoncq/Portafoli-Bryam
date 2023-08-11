@@ -8,12 +8,17 @@ const main = document.querySelector("main")
 const contenedor = document.querySelectorAll('.container-overlay')
 const reDim_1= document.querySelectorAll('.overlay-top-left')
 const reDim_2= document.querySelectorAll('.overlay-bottom-right')
+const logo= document.querySelector('.logo')
 
 function aplicarMediaQuery() {
     
     if (window.innerWidth >= 768) { // Cambia el ancho según tu necesidad
         console.log("hello-computer")
         //miDiv.classList.add("elemento-grande");
+        if(logo.classList.contains("acomodar")){
+            logo.classList.remove('acomodar')
+        }
+
         contenedor.forEach(element => {
             if(element.classList.contains("indice")){
                 element.classList.toggle("indice")
@@ -36,6 +41,9 @@ function aplicarMediaQuery() {
         });
     } else {
         console.log("hello-movil")
+        if(logo.classList.contains("acomodar")==false){
+            logo.classList.add('acomodar')
+        }
         contenedor.forEach(element => {
             
              if(element.classList.contains("container-overlay")){

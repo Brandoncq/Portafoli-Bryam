@@ -6,7 +6,7 @@ function load(){
 
         <br>
         <!--Especialidades-->
-        <div class="specialties">
+        <div class="contacto">
             <div class="container mt-5 mb-5">
                 <div class="row">
                     <div class="col">

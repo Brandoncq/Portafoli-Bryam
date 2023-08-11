@@ -12,7 +12,7 @@ export const projects = [
       "titulo": "Proyecto 2",
       "imagen": "https://mir-s3-cdn-cf.behance.net/projects/808/1688be177151651.Y3JvcCwxMjY1LDk4OSwwLDMxNg.jpg",
       "elementos": [
-        { "tipo": "imagen", "contenido": "../img/imagen1.png" },
+        { "tipo": "imagen", "contenido": "https://drive.google.com/uc?id=1aD5FugYbOkN4Ekn3-EFYoANcVKaeuqbj" },
         { "tipo": "parrafo", "contenido": "Párrafo 1 del Proyecto 1." }
       ]
     },
