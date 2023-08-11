@@ -61,19 +61,32 @@
 .box-shadow{
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-.overlay-bottom-right img{
-    display: flex;
-    height: 100%;
-    object-fit: hidden;
+.specialties h1,h3{
+  color: #002934;
 }
-
-.overlay-top-left img{
-    display: flex;
-    height: 100%;
-    object-fit: hidden;
+.bg-custom{
+  background-color: #fa6464;
 }
-
+.specialties i{
+  font-size: 200px;
+}
+.specialties p{
+  color: #fa6464;
+}
+#contactform input{
+  background-color: #fa6464;
+  color: white;
+}
+#floatingTextarea2{
+  background-color: #fa6464;
+  color: white;
+}
+.content-caruosel h1{
+  color: #002934;
+}
+.content-carousel p{
+  color: #fa6464;
+}
 .img-carousel{
     display: flex;
     width: 100%;
