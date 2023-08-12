@@ -8,16 +8,20 @@ const main = document.querySelector("main")
 
 function load(textoTitulo,textoContenido,Imagen_1,Imagen_2,Imagen_3){
     const contenido= `
-    <div class="stage">
+        <div class="stage">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-6">
                         <div class="d-flex align-items-center align-items-md-start">
                             <div class="d-flex align-items-center logo">
+                                <br>
                                 <img src="https://drive.google.com/uc?id=1hOmjt7w2Ae4QWKRhCTZ32V8pLSrEwce2" alt="" class="img-fluid fs-3 me-md-3 mb-3 mb-md-0" style="max-width: 150px; height: auto;">
                                 <div>
-                                    <h1 class="text-dark mb-0">TALVEZARQUITECTOS</h1>
-                                    <p class="color-custom">UN ESPACIO PROPIO</p>
+                                    <div class="row">
+                                        <h1 class="color-custom-blue mb-0 custom-font">TALVEZARQUITECTOS</h1>
+                                    </div>
+                                    
+                                    <p class="text-white">UN ESPACIO PROPIO</p>
                                 </div>
                             </div>
                         </div>
@@ -35,27 +39,27 @@ function load(textoTitulo,textoContenido,Imagen_1,Imagen_2,Imagen_3){
                         <h3 class="text-center">NUESTROS TRABAJOS</h3>
                         <div class="col">
                             <div class="d-flex align-items-center justify-content-center">
-                                <i class='bx bx-home'></i>  
+                                <i class='bx bx-home' id="proyectos"></i>  
                             </div>
-                            <h1 class="text-center">PROYECTOS DE ARQUITECTURA</h1>
+                            <h3 class="text-center" id="proyectos">PROYECTOS DE ARQUITECTURA</h3>
                             <!--p class="text-center">Este es un ejemplo de texto centrado en un div.
                                 Lorem ipsum dolor sit amet conses
                             </p-->
                         </div>
                         <div class="col">
                             <div class="d-flex align-items-center justify-content-center">
-                                <i class='bx bx-cube' ></i>
+                                <i class='bx bx-cube' id="proyectos"></i>
                             </div>
-                            <h1 class="text-center">RENDERIZACION</h1>
+                            <h3 class="text-center" id="proyectos">RENDERIZACIÓN</h3>
                             <!--p class="text-center">Este es un ejemplo de texto centrado en un div.
                                 Lorem ipsum dolor sit amet conses
                             </p-->
                         </div>
                         <div class="col">
                             <div class="d-flex align-items-center justify-content-center">
-                                <i class='bx bx-pen' ></i>
+                                <i class='bx bx-pen' id="proyectos"></i>
                             </div>
-                            <h1 class="text-center">PROYECTOS DE DISEÑOS</h1>
+                            <h3 class="text-center" id="proyectos">PROYECTOS DE DISEÑOS</h3>
                             <!--p class="text-center">Este es un ejemplo de texto centrado en un div.
                                 Lorem ipsum dolor sit amet conses
                             </p-->
@@ -67,39 +71,18 @@ function load(textoTitulo,textoContenido,Imagen_1,Imagen_2,Imagen_3){
             <div class="imagenes-carrusel p-6">
                 <div class="container ">
                     <div class="row">
-                        <div class="col-lg-6 col-12 m-6 p-6 d-flex align-items-center justify-content-center">
-                            
-
-                            <div class="container">
-                                <div class="container content-caruosel">
-                                    <h1 class="text-center">Atlas</h1>
-                                    <p class="text-center">
-                                        I swear I did I tried
-                                        I swear I did
-                                        A thousand times to let it lie
-                                        A thousand times to let it lie
-                                        I swear I did I tried
-                                        I swear I did
-                                        A thousand times to let it lie
-                                        A thousand times to let it lie
-                                    </p>
-                                </div>
-                            </div>
-
-                            
-                        </div>
-                        <div class="col-lg-6 col-12">
+                        <div class="col-6">
                             <div class="container">
                                 <div id="carouselExample" class="carousel slide">
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
-                                            <img src="https://mir-s3-cdn-cf.behance.net/projects/808/d617d2177155837.Y3JvcCwxNDAwLDEwOTUsMCwyMjg.jpg" class="d-block img-carousel" alt="..." data-bs-toggle="modal" data-bs-target="#fullscreenModal">
+                                            <img src="https://mir-s3-cdn-cf.behance.net/projects/808/d617d2177155837.Y3JvcCwxNDAwLDEwOTUsMCwyMjg.jpg" class="d-block img-carousel img-fluid" alt="..." data-bs-toggle="modal" data-bs-target="#fullscreenModal">
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="https://mir-s3-cdn-cf.behance.net/projects/808/1688be177151651.Y3JvcCwxMjY1LDk4OSwwLDMxNg.jpg" class="d-block img-carousel" alt="..." data-bs-toggle="modal" data-bs-target="#fullscreenModal">
+                                            <img src="https://mir-s3-cdn-cf.behance.net/projects/808/1688be177151651.Y3JvcCwxMjY1LDk4OSwwLDMxNg.jpg" class="d-block img-carousel img-fluid" alt="..." data-bs-toggle="modal" data-bs-target="#fullscreenModal">
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="https://mir-s3-cdn-cf.behance.net/projects/808/5b75d1177021335.Y3JvcCwxOTk5LDE1NjQsMCwyMTc.jpg" class="d-block img-carousel" alt="..." data-bs-toggle="modal" data-bs-target="#fullscreenModal">
+                                            <img src="https://mir-s3-cdn-cf.behance.net/projects/808/5b75d1177021335.Y3JvcCwxOTk5LDE1NjQsMCwyMTc.jpg" class="d-block img-carousel img-fluid" alt="..." data-bs-toggle="modal" data-bs-target="#fullscreenModal">
                                         </div>
                                     </div>
                                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">

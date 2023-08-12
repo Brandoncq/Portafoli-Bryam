@@ -17,7 +17,7 @@ function load(textoTitulo,textoContenido,imagen){
                 </div>
                 <div class="col-lg-5 col-12 bg-custom d-flex acomodar justify-content-center">
                     <h1 class="text-center text-white">${textoTitulo}</h1>
-                    <p class="text-center">
+                    <p style="text-align: justify;">
                         ${textoContenido}
                     </p>     
                 </div>
