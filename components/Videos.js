@@ -6,14 +6,14 @@ function load(textoTitulo){
         <br>
         <br>
         <!--Historias-->
-        <div class="container resize">
-            <div class="container container-overlay">
-                <div class="overlay-top-left">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12">
 
-                    <h1 class="text-center text-dark">${textoTitulo}</h1>
+                    <h1 class="color-custom-blue">${textoTitulo}</h1>
 
                 </div>
-                <div class="overlay-bottom-right">
+                <div class="col-lg-6 col-12">
                     <!--video controls>
                         <source src="https://www.youtube.com/watch?v=kltYlbtgtgE" type="video/mp4">
                     </video-->
@@ -31,7 +31,7 @@ function load(textoTitulo){
 }
 button.addEventListener('click',e=>{
     main.innerHTML ="" 
-    const context = load("Titulo")
+    const context = load("Machu Picchu - The Strokes")
 
     main.innerHTML += context
 

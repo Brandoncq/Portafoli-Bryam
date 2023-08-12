@@ -40,7 +40,7 @@ function load(textoTitulo,textoContenido,Imagen_1,Imagen_2,Imagen_3){
                         <br>
                         <br>
                         <div class="col">
-                            <div class="d-flex align-items-center justify-content-center">
+                            <div class="d-flex align-items-center justify-content-center p-3">
                                 <i class='bx bx-home proyectos-arquitectura' id="proyectos-arquitectura"></i>  
                             </div>
                             <h3 class="text-center" id="proyectos">PROYECTOS DE ARQUITECTURA</h3>
@@ -51,7 +51,7 @@ function load(textoTitulo,textoContenido,Imagen_1,Imagen_2,Imagen_3){
                         </div>
                         
                         <div class="col">
-                            <div class="d-flex align-items-center justify-content-center">
+                            <div class="d-flex align-items-center justify-content-center p-3">
                                 <i class='bx bx-cube proyectos-render' id="proyectos-render"></i>
                             </div>
                             <h3 class="text-center" id="proyectos">RENDERIZACIÓN</h3>
@@ -62,7 +62,7 @@ function load(textoTitulo,textoContenido,Imagen_1,Imagen_2,Imagen_3){
                         </div>
                         
                         <div class="col">
-                            <div class="d-flex align-items-center justify-content-center">
+                            <div class="d-flex align-items-center justify-content-center p-3">
                                 <i class='bx bx-pen proyectos-disenio' id="proyectos-disenio"></i>
                             </div>
                             <h3 class="text-center" id="proyectos">PROYECTOS DE DISEÑOS</h3>
@@ -77,14 +77,13 @@ function load(textoTitulo,textoContenido,Imagen_1,Imagen_2,Imagen_3){
             <br>
             <br>
             <div class="imagenes-carrusel p-6">
-                <div class="container ">
+                <div class="container">
                     <div class="row">
-                        <div class="col-lg-6 col-12">
-                            <div class="container">
+                        <div class="col-lg-6 col-12  p-3">
                                 <div id="carouselExample" class="carousel slide">
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
-                                            <img src="https://mir-s3-cdn-cf.behance.net/projects/808/d617d2177155837.Y3JvcCwxNDAwLDEwOTUsMCwyMjg.jpg" class="d-block img-carousel img-fluid" alt="..." data-bs-toggle="modal" data-bs-target="#fullscreenModal">
+                                            <img src="https://drive.google.com/uc?id=1aD5FugYbOkN4Ekn3-EFYoANcVKaeuqbj" class="d-block img-carousel img-fluid" alt="..." data-bs-toggle="modal" data-bs-target="#fullscreenModal">
                                         </div>
                                         <div class="carousel-item">
                                             <img src="https://mir-s3-cdn-cf.behance.net/projects/808/1688be177151651.Y3JvcCwxMjY1LDk4OSwwLDMxNg.jpg" class="d-block img-carousel img-fluid" alt="..." data-bs-toggle="modal" data-bs-target="#fullscreenModal">
@@ -102,10 +101,9 @@ function load(textoTitulo,textoContenido,Imagen_1,Imagen_2,Imagen_3){
                                     <span class="visually-hidden">Next</span>
                                     </button>
                                 </div>
-                            </div>
                         </div>
-                        <div class="col-lg-6 col-12">
-                            <img src="https://drive.google.com/uc?id=1RcY6Dad-MUdoKVDZRka-iB_S7_ZZpR1v" class="img-fluid">
+                        <div class="col-lg-6 col-12  p-3">
+                            <img src="https://drive.google.com/uc?id=1aD5FugYbOkN4Ekn3-EFYoANcVKaeuqbj" class="img-fluid">
                         </div>
                     </div>   
                 </div>

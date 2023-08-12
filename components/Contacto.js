@@ -10,14 +10,14 @@ function load(){
             <div class="container mt-5 mb-5">
                 <div class="row">
                     <div class="col">
-                        <h1 class="text-center text-white">Texto Centrado</h1>
-                        <p class="text-center text-white">Este es un ejemplo de texto centrado en un div.
+                        <h1 class="text-white">COMENTARIO</h1>
+                        <p class="text-white" style="text-align: justify;">Este es un ejemplo de texto centrado en un div.
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae molestiae reprehenderit laborum minus quos officiis voluptatum qui deleniti, et animi sit architecto voluptas eligendi perspiciatis? Officia quas necessitatibus tenetur similique!
                         </p>
                     </div>
                     <div class="col">
                     <div class="text-white p-3 m-2">
-                        <h1 class="text-center text-white">COMENTARIO</h1>
+                        <!--h1 class="text-white">COMENTARIO</h1-->
                         <form id="contactform" action="https://formsubmit.co/davis036@hotmail.com" method="POST">
                             <div class="mb-3">
                                 
