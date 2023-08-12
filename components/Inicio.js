@@ -36,7 +36,9 @@ function load(textoTitulo,textoContenido,Imagen_1,Imagen_2,Imagen_3){
             <div class="specialties">
                 <div class="container mt-5 mb-5">
                     <div class="row">
-                        <h3 class="text-center">NUESTROS TRABAJOS</h3>
+                        <h5 class="text-center">NUESTROS TRABAJOS</h5>
+                        <br>
+                        <br>
                         <div class="col">
                             <div class="d-flex align-items-center justify-content-center">
                                 <i class='bx bx-home proyectos-arquitectura' id="proyectos-arquitectura"></i>  
@@ -45,7 +47,9 @@ function load(textoTitulo,textoContenido,Imagen_1,Imagen_2,Imagen_3){
                             <!--p class="text-center">Este es un ejemplo de texto centrado en un div.
                                 Lorem ipsum dolor sit amet conses
                             </p-->
+                            <br>
                         </div>
+                        
                         <div class="col">
                             <div class="d-flex align-items-center justify-content-center">
                                 <i class='bx bx-cube proyectos-render' id="proyectos-render"></i>
@@ -54,7 +58,9 @@ function load(textoTitulo,textoContenido,Imagen_1,Imagen_2,Imagen_3){
                             <!--p class="text-center">Este es un ejemplo de texto centrado en un div.
                                 Lorem ipsum dolor sit amet conses
                             </p-->
+                            <br>
                         </div>
+                        
                         <div class="col">
                             <div class="d-flex align-items-center justify-content-center">
                                 <i class='bx bx-pen proyectos-disenio' id="proyectos-disenio"></i>
@@ -63,7 +69,9 @@ function load(textoTitulo,textoContenido,Imagen_1,Imagen_2,Imagen_3){
                             <!--p class="text-center">Este es un ejemplo de texto centrado en un div.
                                 Lorem ipsum dolor sit amet conses
                             </p-->
+                            <br>
                         </div>
+                        
                 </div>
             </div>
             <br>
@@ -154,7 +162,7 @@ function load(textoTitulo,textoContenido,Imagen_1,Imagen_2,Imagen_3){
                         </div>
                         <div class="col-lg-6 col-12">
                             <!-- Contenido del contenedor superpuesto abajo a la derecha -->
-                            <div class="text-white p-3 box-shadow">
+                            <div class="text-white p-3">
                                 <form id="contactform" action="https://formsubmit.co/davis036@hotmail.com" method="POST">
                                     <div class="mb-3">
                                         <div class="row">
