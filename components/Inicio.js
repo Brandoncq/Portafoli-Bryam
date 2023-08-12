@@ -15,7 +15,7 @@ function load(textoTitulo,textoContenido,Imagen_1,Imagen_2,Imagen_3){
                         <div class="d-flex align-items-center align-items-md-start">
                             <div class="d-flex align-items-center logo">
                                 <br>
-                                <img src="https://drive.google.com/uc?id=1hOmjt7w2Ae4QWKRhCTZ32V8pLSrEwce2" alt="" class="img-fluid fs-3 me-md-3 mb-3 mb-md-0" style="max-width: 150px; height: auto;">
+                                <img src="https://drive.google.com/uc?id=1hBLgkOU4-a1p-igq4cUTWC3uOoZ826oG" alt="" class="img-fluid fs-3 me-md-3 mb-3 mb-md-0" style="max-width: 150px; height: auto;">
                                 <div>
                                     <div class="row">
                                         <h1 class="color-custom-blue mb-0 custom-font">TALVEZARQUITECTOS</h1>

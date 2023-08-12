@@ -165,7 +165,7 @@ function showProjectDetails(project) {
   projectDetails.innerHTML=""
   let contender = `
         <br>
-          <div class="container col-6">
+          <div class="container col-lg-7 col-12">
             <img src="${project.imagen}" alt="${project.titulo}" class="img-fluid box-shadow">
             <h2 class="text-center color-custom-blue">${project.titulo}</h2>
           </div>
@@ -173,8 +173,8 @@ function showProjectDetails(project) {
   
   project.elementos.forEach(elemento => {
     contender += `
-          <br>
-          <div class="container col-6">`
+        <br>
+          <div class="container col-lg-7 col-12">`
     if (elemento.tipo === 'imagen') {
       contender += `<img src="${elemento.contenido}" alt="Imagen" class="img-fluid box-shadow">`
     } else if (elemento.tipo === 'parrafo') {
