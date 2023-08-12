@@ -1,6 +1,9 @@
 import {arquidata} from './datos-arqui.js'
 import {diseniodata} from './datos-disenio.js'
 import {renderdata} from './datos-render.js'
+import { target } from './Inicio.js';
+
+
 
 const button = document.querySelector("#proyectos")
 const main = document.querySelector("main")
@@ -79,6 +82,7 @@ gallery.classList.add('mt-5')
 
 //TIPOS DE PROYECTOS
 const arquitectura = document.createElement('div')
+arquitectura.setAttribute('id','content-arquitectura')
 arquitectura.classList.add('container')
 arquitectura.classList.add('text-center')
 const h1arquitectura = document.createElement('h2')
@@ -92,6 +96,7 @@ gallery.appendChild(arquitectura)
 
 
 const renderizacion = document.createElement('div')
+renderizacion.setAttribute('id','content-render')
 renderizacion.classList.add('container')
 renderizacion.classList.add('text-center')
 const h1renderizacion = document.createElement('h2')
@@ -105,6 +110,7 @@ gallery.appendChild(renderizacion)
 
 
 const disenio = document.createElement('div')
+disenio.setAttribute('id','content-disenio')
 disenio.classList.add('container')
 disenio.classList.add('text-center')
 const h1disenio = document.createElement('h2')
@@ -188,6 +194,35 @@ button.addEventListener('click',e=>{
   main.appendChild(gallery)
   //main.appendChild(projectDetails)
   generateGallery(arquitectura,fila_arq,arquidata)
-  generateGallery(disenio,fila_dise,diseniodata)
   generateGallery(renderizacion,fila_render,renderdata)
+  generateGallery(disenio,fila_dise,diseniodata)
+  
 })
+
+function Verificar(){
+  if (!target) {
+
+  } else 
+  main.innerHTML ="" 
+  fila_arq.innerHTML=""
+  fila_render.innerHTML=""
+  fila_dise.innerHTML=""
+  main.appendChild(gallery)
+  //main.appendChild(projectDetails)
+  generateGallery(arquitectura,fila_arq,arquidata)
+  generateGallery(renderizacion,fila_render,renderdata)
+  generateGallery(disenio,fila_dise,diseniodata)
+  
+
+  if(target.id=='proyectos-arquitectura'){
+
+    arquitectura.scrollIntoView({ behavior: "smooth" });
+  }else if(target.id=='proyectos-render'){
+
+    renderizacion.scrollIntoView({ behavior: "smooth" });
+  }else{
+
+    disenio.scrollIntoView({ behavior: "smooth" });
+  }
+}
+document.addEventListener("targetChanged", Verificar); 

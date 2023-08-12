@@ -169,6 +169,16 @@ body {
 }
 @media (max-width: 768px) {
   .custom-font {
-    font-size: 1.4em;
+    font-size: 1.9em;
+  }
+}
+@media (max-width: 500px) {
+  .custom-font {
+    font-size: 1.7em;
+  }
+}
+@media (max-width: 300px) {
+  .custom-font {
+    font-size: 1.5em;
   }
 }

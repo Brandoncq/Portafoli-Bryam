@@ -8,7 +8,7 @@ const main = document.querySelector("main")
 
 function load(textoTitulo,textoContenido,Imagen_1,Imagen_2,Imagen_3){
     const contenido= `
-        <div class="stage">
+    <div class="stage">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-6">
@@ -39,7 +39,7 @@ function load(textoTitulo,textoContenido,Imagen_1,Imagen_2,Imagen_3){
                         <h3 class="text-center">NUESTROS TRABAJOS</h3>
                         <div class="col">
                             <div class="d-flex align-items-center justify-content-center">
-                                <i class='bx bx-home' id="proyectos"></i>  
+                                <i class='bx bx-home proyectos-arquitectura' id="proyectos-arquitectura"></i>  
                             </div>
                             <h3 class="text-center" id="proyectos">PROYECTOS DE ARQUITECTURA</h3>
                             <!--p class="text-center">Este es un ejemplo de texto centrado en un div.
@@ -48,7 +48,7 @@ function load(textoTitulo,textoContenido,Imagen_1,Imagen_2,Imagen_3){
                         </div>
                         <div class="col">
                             <div class="d-flex align-items-center justify-content-center">
-                                <i class='bx bx-cube' id="proyectos"></i>
+                                <i class='bx bx-cube proyectos-render' id="proyectos-render"></i>
                             </div>
                             <h3 class="text-center" id="proyectos">RENDERIZACIÓN</h3>
                             <!--p class="text-center">Este es un ejemplo de texto centrado en un div.
@@ -57,7 +57,7 @@ function load(textoTitulo,textoContenido,Imagen_1,Imagen_2,Imagen_3){
                         </div>
                         <div class="col">
                             <div class="d-flex align-items-center justify-content-center">
-                                <i class='bx bx-pen' id="proyectos"></i>
+                                <i class='bx bx-pen proyectos-disenio' id="proyectos-disenio"></i>
                             </div>
                             <h3 class="text-center" id="proyectos">PROYECTOS DE DISEÑOS</h3>
                             <!--p class="text-center">Este es un ejemplo de texto centrado en un div.
@@ -71,7 +71,7 @@ function load(textoTitulo,textoContenido,Imagen_1,Imagen_2,Imagen_3){
             <div class="imagenes-carrusel p-6">
                 <div class="container ">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-lg-6 col-12">
                             <div class="container">
                                 <div id="carouselExample" class="carousel slide">
                                     <div class="carousel-inner">
@@ -96,12 +96,15 @@ function load(textoTitulo,textoContenido,Imagen_1,Imagen_2,Imagen_3){
                                 </div>
                             </div>
                         </div>
-                    </div>
+                        <div class="col-lg-6 col-12">
+                            <img src="https://drive.google.com/uc?id=1RcY6Dad-MUdoKVDZRka-iB_S7_ZZpR1v" class="img-fluid">
+                        </div>
+                    </div>   
                 </div>
             </div>
             <br>
             <br>
-        <div class="box-content">
+        
             <br>
             <!-- Modal en pantalla completa -->
             <div class="modal fade" id="fullscreenModal" tabindex="-1" aria-labelledby="fullscreenModalLabel" aria-hidden="true">
@@ -135,20 +138,21 @@ function load(textoTitulo,textoContenido,Imagen_1,Imagen_2,Imagen_3){
             </div>
             <br>
             <br>
+        <div class="box-content">
             <br>
             <br>
             <!--Mensaje-->
             <div class="container">
                 <div class="container">
                     <div class="row">
-                        <div class="col">
+                        <div class="col-lg-6 col-12">
                             <!-- Contenido del contenedor superpuesto arriba a la izquierda -->
                             <h1 class="text-center text-white">Contactos:</h1>
                             <p class="text-center text-white">
                                 talvezarquitectos@gmail.com
                             </p>
                         </div>
-                        <div class="col">
+                        <div class="col-lg-6 col-12">
                             <!-- Contenido del contenedor superpuesto abajo a la derecha -->
                             <div class="text-white p-3 box-shadow">
                                 <form id="contactform" action="https://formsubmit.co/davis036@hotmail.com" method="POST">
@@ -260,8 +264,34 @@ button.addEventListener('click',e=>{
     window.addEventListener("resize", aplicarMediaQuery);
 
 })
+let target = '';
 
 
+
+document.querySelector("main").addEventListener("click", function(event) {
+  const clickedTarget = event.target;
+  
+  if (clickedTarget.classList.contains("proyectos-arquitectura")) {
+    
+    target = clickedTarget
+    console.log("arq")
+    document.dispatchEvent(new Event("targetChanged"));
+    // Realizar otras acciones
+  }
+  if (clickedTarget.classList.contains("proyectos-render")) {
+    target = clickedTarget
+    console.log("render")
+    document.dispatchEvent(new Event("targetChanged"));
+    // Realizar otras acciones
+  }
+  if (clickedTarget.classList.contains("proyectos-disenio")) {
+    target = clickedTarget
+    console.log("diseño")
+    document.dispatchEvent(new Event("targetChanged"));
+    // Realizar otras acciones
+  }
+});
+export {target}
 
 
 
