@@ -85,6 +85,7 @@ const arquitectura = document.createElement('div')
 arquitectura.setAttribute('id','content-arquitectura')
 arquitectura.classList.add('container')
 arquitectura.classList.add('text-center')
+arquitectura.style.paddingTop = '75px'
 const h1arquitectura = document.createElement('h2')
 h1arquitectura.classList.add('color-custom-blue')
 const fila_arq = document.createElement('div')
@@ -99,6 +100,7 @@ const renderizacion = document.createElement('div')
 renderizacion.setAttribute('id','content-render')
 renderizacion.classList.add('container')
 renderizacion.classList.add('text-center')
+renderizacion.style.paddingTop = '75px'
 const h1renderizacion = document.createElement('h2')
 h1renderizacion.classList.add('color-custom-blue')
 const fila_render = document.createElement('div')
@@ -113,6 +115,7 @@ const disenio = document.createElement('div')
 disenio.setAttribute('id','content-disenio')
 disenio.classList.add('container')
 disenio.classList.add('text-center')
+disenio.style.paddingTop = '75px'
 const h1disenio = document.createElement('h2')
 h1disenio.classList.add('color-custom-blue')
 const fila_dise = document.createElement('div')
@@ -164,7 +167,7 @@ function showProjectDetails(project) {
         <br>
           <div class="container col-6">
             <img src="${project.imagen}" alt="${project.titulo}" class="img-fluid box-shadow">
-            <h2 class="text-center text-dark">${project.titulo}</h2>
+            <h2 class="text-center color-custom-blue">${project.titulo}</h2>
           </div>
         <br>`
   
@@ -215,13 +218,10 @@ function Verificar(){
   
 
   if(target.id=='proyectos-arquitectura'){
-
     arquitectura.scrollIntoView({ behavior: "smooth" });
   }else if(target.id=='proyectos-render'){
-
     renderizacion.scrollIntoView({ behavior: "smooth" });
   }else{
-
     disenio.scrollIntoView({ behavior: "smooth" });
   }
 }

@@ -17,36 +17,35 @@ function load(){
                     </div>
                     <div class="col">
                     <div class="text-white p-3 m-2">
-                        <h1 class="text-center text-white">Texto Centrado</h1>
+                        <h1 class="text-center text-white">COMENTARIO</h1>
                         <form id="contactform" action="https://formsubmit.co/davis036@hotmail.com" method="POST">
                             <div class="mb-3">
                                 
                                 <div class="row">
                                     <div class="col">
-                                        <label for="exampleInputEmail1" class="form-label">First Name</label>
-                                        <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                                        <label for="exampleInputEmail1" class="form-label">Nombres:</label>
+                                        <input type="text" class="form-control" placeholder="" aria-label="First name">
                                     </div>
                                     <div class="col">
-                                        <label for="exampleInputEmail1" class="form-label">Last Name</label>
-                                        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                                        <label for="exampleInputEmail1" class="form-label">Apellidos:</label>
+                                        <input type="text" class="form-control" placeholder="" aria-label="Last name">
                                     </div>
                                 </div>
                                 <br>
                                 <div class="row">
                                     <div class="col">
-                                        <label for="exampleInputEmail1" class="form-label">Email</label>
-                                        <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                                        <label for="exampleInputEmail1" class="form-label">Email:</label>
+                                        <input type="text" class="form-control" placeholder="" aria-label="First name">
                                     </div>
                                     <div class="col">
-                                        <label for="exampleInputEmail1" class="form-label">Asunto</label>
-                                        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                                        <label for="exampleInputEmail1" class="form-label">Asunto:</label>
+                                        <input type="text" class="form-control" placeholder="" aria-label="Last name">
                                     </div>
                                 </div>
                                 <br>
-                                <label for="exampleInputEmail1" class="form-label">Mensaje</label>
+                                <label for="exampleInputEmail1" class="form-label">Mensaje:</label>
                                 <div class="form-floating">
                                         <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                                        <label for="floatingTextarea2">Comments</label>
                                 </div>
                                 <br>
                                 <button type="submit" class="btn btn-secondary">Enviar</button>

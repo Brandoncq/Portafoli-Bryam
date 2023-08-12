@@ -2,7 +2,7 @@
 const button = document.querySelector("#soy")
 const main = document.querySelector("main")
 
-function load(textoTitulo,textoContenido,imagen){
+function load(textoTitulo,Nombre,textoContenido,imagen){
     const contenido= `
 
     <div class="bg-white">
@@ -18,7 +18,7 @@ function load(textoTitulo,textoContenido,imagen){
                 <div class="col-lg-5 col-12 bg-custom d-flex acomodar justify-content-center">
                     <h1 class="text-center text-white">${textoTitulo}</h1>
                     <p style="text-align: justify;">
-                        ${textoContenido}
+                        <strong>${Nombre}</strong>${textoContenido}
                     </p>     
                 </div>
                 
@@ -32,7 +32,7 @@ function load(textoTitulo,textoContenido,imagen){
 }
 button.addEventListener('click',e=>{
     main.innerHTML ="" 
-    const context = load("¿QUIENES SOMOS?","TALVEZARQUITECTOS, surge con la premisa de explorar enfoques innovadores y diversas disciplinas que enriquezcan la arquitectura. Bajo la dirección de Fabiana Valdivia y Andre Ccoica, fusiona la rigurosidad arquitectónica con la influencia del arte en su conjunto. Nos destacamos en proyectos residenciales y en la visualización arquitectónica, con un enfoque arraigado en diseños simples y funcionales. Cada proyecto encarna una oportunidad para concebir soluciones inspiradoras y versátiles. Te extendemos una cordial invitación a acompañarnos en la exploración de las posibilidades de tu próximo proyecto.","https://mir-s3-cdn-cf.behance.net/projects/808/d617d2177155837.Y3JvcCwxNDAwLDEwOTUsMCwyMjg.jpg")
+    const context = load("¿QUIÉNES SOMOS?","TALVEZARQUITECTOS, ", "surge con la premisa de explorar enfoques innovadores y diversas disciplinas que enriquezcan la arquitectura. Bajo la dirección de Fabiana Valdivia y Andre Ccoica, fusiona la rigurosidad arquitectónica con la influencia del arte en su conjunto. Nos destacamos en proyectos residenciales y en la visualización arquitectónica, con un enfoque arraigado en diseños simples y funcionales. Cada proyecto encarna una oportunidad para concebir soluciones inspiradoras y versátiles. Te extendemos una cordial invitación a acompañarnos en la exploración de las posibilidades de tu próximo proyecto.","https://mir-s3-cdn-cf.behance.net/projects/808/d617d2177155837.Y3JvcCwxNDAwLDEwOTUsMCwyMjg.jpg")
 
     main.innerHTML += context
 
