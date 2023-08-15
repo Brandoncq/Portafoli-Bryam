@@ -11,12 +11,12 @@ function load(textoTitulo,Nombre,textoContenido,imagen){
     <br>
         <div class="container">
             <div class="row">
-                <div class="col-lg-7 col-12 bg-custom">
+                <div class="col-lg-6 col-12 bg-custom">
                     <img src="${imagen}" class="img-fluid box-shadow">
                     </p>     
                 </div>
-                <div class="col-lg-5 col-12 bg-custom d-flex acomodar justify-content-center">
-                    <h1 class="text-white">${textoTitulo}</h1>
+                <div class="col-lg-6 col-12 bg-custom d-flex acomodar justify-content-center">
+                    <strong><p class="text-white">${textoTitulo}</p></strong>
                     <p style="text-align: justify;">
                         <strong>${Nombre}</strong>${textoContenido}
                     </p>     
@@ -32,7 +32,7 @@ function load(textoTitulo,Nombre,textoContenido,imagen){
 }
 button.addEventListener('click',e=>{
     main.innerHTML ="" 
-    const context = load("¿QUIÉNES SOMOS?","TALVEZARQUITECTOS, ", "surge con la premisa de explorar enfoques innovadores y diversas disciplinas que enriquezcan la arquitectura. Bajo la dirección de Fabiana Valdivia y Andre Ccoica, fusiona la rigurosidad arquitectónica con la influencia del arte en su conjunto. Nos destacamos en proyectos residenciales y en la visualización arquitectónica, con un enfoque arraigado en diseños simples y funcionales. Cada proyecto encarna una oportunidad para concebir soluciones inspiradoras y versátiles. Te extendemos una cordial invitación a acompañarnos en la exploración de las posibilidades de tu próximo proyecto.","https://mir-s3-cdn-cf.behance.net/projects/808/d617d2177155837.Y3JvcCwxNDAwLDEwOTUsMCwyMjg.jpg")
+    const context = load("¿QUIÉNES SOMOS?","TALVEZARQUITECTOS, ", "surge con la premisa de explorar enfoques innovadores y diversas disciplinas que enriquezcan la arquitectura. Bajo la dirección de Fabiana Valdivia y Andre Ccoica, fusiona la rigurosidad arquitectónica con la influencia del arte en su conjunto. Nos destacamos en proyectos residenciales y en la visualización arquitectónica, con un enfoque arraigado en diseños simples y funcionales. Cada proyecto encarna una oportunidad para concebir soluciones inspiradoras y versátiles. Te extendemos una cordial invitación a acompañarnos en la exploración de las posibilidades de tu próximo proyecto.","https://drive.google.com/uc?id=125dVxJKwu5me9BBlZnmV9yQD7RwJTqVl")
 
     main.innerHTML += context
 

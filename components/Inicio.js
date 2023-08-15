@@ -179,7 +179,7 @@ function load(textoTitulo,textoContenido,Imagen_1,Imagen_2,Imagen_3){
                                         <br>
                                         <label for="exampleInputEmail1" class="form-label">Mensaje:</label>
                                         <div class="form-floating">
-                                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                                            <textarea class="form-control" placeholder="" id="floatingTextarea2" style="height: 100px"></textarea>
                                                 <!--label for="floatingTextarea2">Comments</label-->
                                         </div>
                                         <br>

@@ -12,68 +12,6 @@ const buttonarq = document.querySelectorAll("#proyectos-arquitectura")
 const buttonrender = document.querySelectorAll("#proyectos-render")
 const buttondisenio = document.querySelectorAll("#proyectos-disenio")
 
-/*const projectDetails = document.createElement('div')
-projectDetails.setAttribute('id','projectDetails')
-
-async function loadimg(){
-  let contenidoimg= ``
-  const response = await fetch('../datos.json');
-  const data = await response.json();
-    data.forEach(proyecto => {
-      contenidoimg += `
-      <div class="col-md-4 p-3">
-        <div class="image-card cursor-pointer">
-          <img src="${proyecto.imagen}" class="img-fluid">
-          <div class="image-overlay gallery-img">${proyecto.titulo}</div>
-        </div>
-      </div>`
-      const gallery = document.querySelector('.gallery-img')  
-      gallery.addEventListener('click', () => {
-        showProjectDetails(proyecto);
-      });
-    });
-
-  return contenidoimg
-}
-
-
-async function load(){
-  const contenido = `
-      <div class="container mt-5 gallery">
-        <div class="row">
-          ${await loadimg()}
-        </div>
-      </div>`;
-    
-  main.innerHTML = contenido;
-}
-
-const gallery = document.querySelector('.gallery');
-
-
-button.addEventListener('click',e=>{
-    main.innerHTML ="" 
-    load()
-})
-
-//Cargar Contenido de n Proyectos
-
-
-function Contenido(){
-  fetch('../datos.json')
-  .then(response => response.json())
-  .then(data => {
-    // Ahora puedes acceder a los objetos JSON en el array 'data'
-    tamanioDelArray = data.length
-    data.forEach(proyecto => {
-      proyecto.addEventListener
-    });
-  })
-  .catch(error => {
-    console.log('Error:', error);
-  });
-}*/
-
 
 const gallery = document.createElement('div')
 gallery.setAttribute('class','gallery')
@@ -124,7 +62,9 @@ h1disenio.textContent = 'PROYECTOS DE DISEÑO'
 disenio.appendChild(h1disenio)
 disenio.appendChild(fila_dise)
 gallery.appendChild(disenio)
-
+//ARREGLOS
+const br = document.createElement("br")
+const br1 = document.createElement("br")
 //CONTENIDO DE PROYECTOS
 
 
@@ -158,6 +98,8 @@ function generateGallery(tipo,row_tipo,projects) {
     tipo.appendChild(row_tipo)
   });
   gallery.appendChild(tipo)
+  gallery.appendChild(br)
+  gallery.appendChild(br1)
 }
 
 // Función para mostrar los detalles del proyecto seleccionado
@@ -165,23 +107,25 @@ function showProjectDetails(project) {
   projectDetails.innerHTML=""
   let contender = `
         <br>
-          <div class="container col-lg-7 col-12">
+          <div class="container col-lg-6 col-12">
             <img src="${project.imagen}" alt="${project.titulo}" class="img-fluid box-shadow">
+            <br>
+            <br>
             <h2 class="text-center color-custom-blue">${project.titulo}</h2>
           </div>
         <br>`
   
   project.elementos.forEach(elemento => {
     contender += `
-        <br>
-          <div class="container col-lg-7 col-12">`
+
+          <div class="container col-lg-6 col-12">`
     if (elemento.tipo === 'imagen') {
       contender += `<img src="${elemento.contenido}" alt="Imagen" class="img-fluid box-shadow">`
     } else if (elemento.tipo === 'parrafo') {
-      contender += `<p class="text-center text-dark">${elemento.contenido}</p>`
+      contender += `<p class="text-dark" style="text-align: justify;">${elemento.contenido}</p>`
     }
     contender +=`</div>
-      <br>
+      
       <br>`
   });
   projectDetails.innerHTML +=contender
