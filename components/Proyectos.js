@@ -28,7 +28,7 @@ const h1arquitectura = document.createElement('h2')
 h1arquitectura.classList.add('color-custom-blue')
 const fila_arq = document.createElement('div')
 fila_arq.setAttribute('class','row')
-h1arquitectura.textContent = 'PROYECTOS DE ARQUITECTURA'
+h1arquitectura.textContent = 'PROYECTOS ARQUITECTÓNICOS'
 arquitectura.appendChild(h1arquitectura)
 arquitectura.appendChild(fila_arq)
 gallery.appendChild(arquitectura)
@@ -90,7 +90,9 @@ function generateGallery(tipo,row_tipo,projects) {
       
       main.innerHTML=""
       main.appendChild(projectDetails)
-      showProjectDetails(project);
+      showProjectDetails(project,projectDetails);
+      const newURL = `?section=proyectos&nombre=${encodeURIComponent(project.titulo)}`;
+      window.history.pushState({ section: "proyectos", nombre: project.titulo }, "", newURL)
     });
 
     
@@ -101,17 +103,15 @@ function generateGallery(tipo,row_tipo,projects) {
   gallery.appendChild(br)
   gallery.appendChild(br1)
 }
-
+export{projectDetails}
 // Función para mostrar los detalles del proyecto seleccionado
-function showProjectDetails(project) {
+export function showProjectDetails(project,projectDetails) {
   projectDetails.innerHTML=""
   let contender = `
         <br>
           <div class="container col-lg-6 col-12">
-            <img src="${project.imagen}" alt="${project.titulo}" class="img-fluid box-shadow">
-            <br>
-            <br>
             <h2 class="text-center color-custom-blue">${project.titulo}</h2>
+            <img src="${project.imagen}" alt="${project.titulo}" class="img-fluid box-shadow img-gallery">
           </div>
         <br>`
   
@@ -170,3 +170,15 @@ function Verificar(){
   }
 }
 document.addEventListener("targetChanged", Verificar); 
+
+export function Navegacion_proyectos(){
+  main.innerHTML ="" 
+  fila_arq.innerHTML=""
+  fila_render.innerHTML=""
+  fila_dise.innerHTML=""
+  main.appendChild(gallery)
+  //main.appendChild(projectDetails)
+  generateGallery(arquitectura,fila_arq,arquidata)
+  generateGallery(renderizacion,fila_render,renderdata)
+  generateGallery(disenio,fila_dise,diseniodata)
+}

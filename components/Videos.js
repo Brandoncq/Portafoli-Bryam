@@ -20,9 +20,11 @@ function load(textoTitulo,textoContenido){
                         <source src="https://www.youtube.com/watch?v=kltYlbtgtgE" type="video/mp4">
                     </video-->
                     <div class="ratio ratio-16x9 box-shadow">
-                        <iframe src="https://www.youtube.com/embed/Xt_F4J4O-xo" title="YouTube video" allowfullscreen></iframe>
+                        <!iframe src="https://www.youtube.com/embed/em0MknB6wFo" title="YouTube video" allowfullscreen></iframe>
                     </div>
-
+                    <div class="ratio ratio-16x9 box-shadow">
+                        <iframe src="https://www.youtube.com/embed/Ke4Zh0QkPFw" title="YouTube video" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
             
@@ -44,7 +46,7 @@ button.addEventListener('click',e=>{
     function aplicarMediaQuery() {
         
         if (window.innerWidth >= 768) { // Cambia el ancho según tu necesidad
-            console.log("hello-computer")
+            //console.log("hello-computer")
             //miDiv.classList.add("elemento-grande");
             contenedor.forEach(element => {
                 if(element.classList.contains("indice")){
@@ -67,7 +69,7 @@ button.addEventListener('click',e=>{
                 }
             });
         } else {
-            console.log("hello-movil")
+            //console.log("hello-movil")
             contenedor.forEach(element => {
                 
                 if(element.classList.contains("container-overlay")){

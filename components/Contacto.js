@@ -3,22 +3,22 @@ const main = document.querySelector("main")
 
 function load(){
     const contenido= `
-
+        <br>
         <br>
         <!--Especialidades-->
         <div class="contacto">
             <div class="container mt-5 mb-5">
                 <div class="row">
-                    <div class="col">
-                        <h1 class="text-white">COMENTARIO</h1>
-                        <p class="text-white" style="text-align: justify;">Este es un ejemplo de texto centrado en un div.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae molestiae reprehenderit laborum minus quos officiis voluptatum qui deleniti, et animi sit architecto voluptas eligendi perspiciatis? Officia quas necessitatibus tenetur similique!
+                    <div class="col-lg-6 col-12">
+                        <strong><p class="text-white">COMENTARIO</p></strong>
+                        <p class="text-white" style="text-align: justify;">
+                        ¿Necesitas orientación en tu proyecto arquitectónico o tienes preguntas sobre diseño y construcción? Estamos aquí para ayudarte.
                         </p>
                     </div>
-                    <div class="col">
+                    <div class="col-lg-6 col-12">
                     <div class="text-white p-3 m-2">
                         <!--h1 class="text-white">COMENTARIO</h1-->
-                        <form id="contactform" action="https://formsubmit.co/davis036@hotmail.com" method="POST">
+                        <form id="contactform" action="https://formsubmit.co/talvezarquitectos2@gmail.com" method="POST">
                             <div class="mb-3">
                                 
                                 <div class="row">
@@ -68,3 +68,8 @@ button.addEventListener('click',e=>{
     main.innerHTML += context
 
 })
+export function Navegacion_contacto(){
+    main.innerHTML ="" 
+    const context = load()
+    main.innerHTML += context
+}

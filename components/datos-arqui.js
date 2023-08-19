@@ -30,8 +30,8 @@ export const arquidata = [
       ]
     },
     {
-      "titulo": "TORRE COLET",
-      "imagen": "https://drive.google.com/uc?id=1ADtmHxbBs95tzR-2cQf53bANrNCQEkcx",
+      "titulo": "TORRE COLETT",
+      "imagen": "https://drive.google.com/uc?id=1O96Kxt2YTAD2sSDmDKwiwcuu95e31dtF",
       "elementos": [
         { "tipo": "parrafo", "contenido": "En un área de 600 m2 ubicada en el corazón de un conjunto residencial, al que se accede a través de una plaza, se ha concebido un conjunto de 16 viviendas. El objetivo central de este proyecto es brindar una mejora en la calidad de vida dentro del contexto de una creciente densidad urbana. La reinterpretación de las regulaciones del código y las características del entorno barrial de R6 han dado lugar a una nueva tipología que busca enriquecer la oferta arquitectónica en esta área." },
         { "tipo": "imagen", "contenido": "https://drive.google.com/uc?id=1dv0L6rZgyl3aYRnekF8JXybrCGSUZY7_" },

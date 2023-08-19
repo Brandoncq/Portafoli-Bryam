@@ -1,32 +1,27 @@
-window.addEventListener("click",e=>{
-    console.log(e.target)
-})
-
-
 const button = document.querySelector("#inicio")
 const main = document.querySelector("main")
 
-function load(textoTitulo,textoContenido,Imagen_1,Imagen_2,Imagen_3){
+function load(){
     const contenido= `
     <div class="stage">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-6">
-                        <div class="d-flex align-items-center align-items-md-start">
-                            <div class="d-flex align-items-center logo">
-                                <br>
-                                <img src="https://drive.google.com/uc?id=1hBLgkOU4-a1p-igq4cUTWC3uOoZ826oG" alt="" class="img-fluid fs-3 me-md-3 mb-3 mb-md-0" style="max-width: 150px; height: auto;">
-                                <div>
+                <div class="row col-12">
+                    <!--div class="col-md-12 col-6"-->
+                        <div class="d-flex custom-logo">
+                            <div class="d-flex align-items-center justify-content-center logo col-12">
+                                
+                                <img src="img/logo azul recortado.png" alt="" class="img-fluid fs-3 me-md-3 mb-0 mb-md-0" style="max-width: 130px; height: auto;">
+                                <div class="d-flexalign-items-center m-0 p-0">
                                     <div class="row">
                                         <h1 class="color-custom-blue mb-0 custom-font">TALVEZARQUITECTOS</h1>
                                     </div>
                                     
-                                    <p class="text-white">UN ESPACIO PROPIO</p>
+                                    <p class="color-custom-blue">UN ESPACIO PROPIO</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                <!--/div-->
             </div>
         </div>
         <br>
@@ -41,9 +36,9 @@ function load(textoTitulo,textoContenido,Imagen_1,Imagen_2,Imagen_3){
                         <br>
                         <div class="col">
                             <div class="d-flex align-items-center justify-content-center p-3">
-                                <i class='bx bx-home proyectos-arquitectura' id="proyectos-arquitectura"></i>  
+                                <i class='bx bx-home proyectos-arquitectura proyecto' id="proyectos-arquitectura"></i>  
                             </div>
-                            <h3 class="text-center" id="proyectos">PROYECTOS DE ARQUITECTURA</h3>
+                            <h3 class="text-center" id="proyectos">PROYECTOS ARQUITECTÓNICOS</h3>
                             <!--p class="text-center">Este es un ejemplo de texto centrado en un div.
                                 Lorem ipsum dolor sit amet conses
                             </p-->
@@ -52,7 +47,7 @@ function load(textoTitulo,textoContenido,Imagen_1,Imagen_2,Imagen_3){
                         
                         <div class="col">
                             <div class="d-flex align-items-center justify-content-center p-3">
-                                <i class='bx bx-cube proyectos-render' id="proyectos-render"></i>
+                                <i class='bx bx-cube proyectos-render proyecto' id="proyectos-render"></i>
                             </div>
                             <h3 class="text-center" id="proyectos">RENDERIZACIÓN</h3>
                             <!--p class="text-center">Este es un ejemplo de texto centrado en un div.
@@ -63,7 +58,7 @@ function load(textoTitulo,textoContenido,Imagen_1,Imagen_2,Imagen_3){
                         
                         <div class="col">
                             <div class="d-flex align-items-center justify-content-center p-3">
-                                <i class='bx bx-pen proyectos-disenio' id="proyectos-disenio"></i>
+                                <i class='bx bx-pen proyectos-disenio proyecto' id="proyectos-disenio"></i>
                             </div>
                             <h3 class="text-center" id="proyectos">PROYECTOS DE DISEÑOS</h3>
                             <!--p class="text-center">Este es un ejemplo de texto centrado en un div.
@@ -76,74 +71,39 @@ function load(textoTitulo,textoContenido,Imagen_1,Imagen_2,Imagen_3){
             </div>
             <br>
             <br>
-            <div class="imagenes-carrusel p-6">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-12  p-3">
-                                <div id="carouselExample" class="carousel slide">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="https://drive.google.com/uc?id=1aD5FugYbOkN4Ekn3-EFYoANcVKaeuqbj" class="d-block img-carousel img-fluid" alt="..." data-bs-toggle="modal" data-bs-target="#fullscreenModal">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="https://mir-s3-cdn-cf.behance.net/projects/808/1688be177151651.Y3JvcCwxMjY1LDk4OSwwLDMxNg.jpg" class="d-block img-carousel img-fluid" alt="..." data-bs-toggle="modal" data-bs-target="#fullscreenModal">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="https://mir-s3-cdn-cf.behance.net/projects/808/5b75d1177021335.Y3JvcCwxOTk5LDE1NjQsMCwyMTc.jpg" class="d-block img-carousel img-fluid" alt="..." data-bs-toggle="modal" data-bs-target="#fullscreenModal">
-                                        </div>
-                                    </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                    </button>
-                                </div>
-                        </div>
-                        <div class="col-lg-6 col-12  p-3">
-                            <img src="https://drive.google.com/uc?id=1aD5FugYbOkN4Ekn3-EFYoANcVKaeuqbj" class="img-fluid">
-                        </div>
-                    </div>   
-                </div>
-            </div>
-            <br>
-            <br>
-        
-            <br>
-            <!-- Modal en pantalla completa -->
-            <div class="modal fade" id="fullscreenModal" tabindex="-1" aria-labelledby="fullscreenModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <div id="fullscreenCarousel" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="https://mir-s3-cdn-cf.behance.net/projects/808/d617d2177155837.Y3JvcCwxNDAwLDEwOTUsMCwyMjg.jpg" class="d-block img-carousel img-fluid " alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="https://mir-s3-cdn-cf.behance.net/projects/808/1688be177151651.Y3JvcCwxMjY1LDk4OSwwLDMxNg.jpg" class="d-block img-carousel img-fluid " alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="https://mir-s3-cdn-cf.behance.net/projects/808/5b75d1177021335.Y3JvcCwxOTk5LDE1NjQsMCwyMTc.jpg" class="d-block img-carousel img-fluid " alt="..." >
-                                    </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#fullscreenCarousel" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#fullscreenCarousel" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                    </button>
-                            </div>
-                        </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-12 p-2">
+                        <img src="https://drive.google.com/uc?id=12-hjiFlemEJMI0XADz9v-EhDdhLelLQt" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-lg-3 col-12 p-2">
+                        <img src="https://drive.google.com/uc?id=1kXM20sT6Jq3gJdNkI9hJHG1uq5bT-05L" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-lg-3 col-12 p-2">
+                        <img src="https://drive.google.com/uc?id=11_yGymuC_SHw4svkGXc5YwXvu66c-nuj" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-lg-3 col-12 p-2">
+                        <img src="https://drive.google.com/uc?id=1fZfz_j3bS_5OPilXh5NiZP0hqFkttryV" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-lg-3 col-12 p-2">
+                        <img src="https://drive.google.com/uc?id=1gx7_16gPs3cAHfPtsUigtC2YqzwmsDB1" class="img-fluid" alt="...">
+                    </div> 
+                    <div class="col-lg-3 col-12 p-2">
+                        <img src="https://drive.google.com/uc?id=1cnGMWcepS-PWKma2gVBspOB2V7xMRdLn" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-lg-3 col-12 p-2">
+                        <img src="https://drive.google.com/uc?id=1ZoYg5R7S6qMhee-MF1go5Fqexy-8jv9S" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-lg-3 col-12 p-2">
+                        <img src="https://drive.google.com/uc?id=1zVnn2-nTCmIg_lczYYh9ebrDB7zElAdI" class="d-block img-carousel img-fluid" alt="..." data-bs-toggle="modal" data-bs-target="#fullscreenModal">
                     </div>
                 </div>
             </div>
             <br>
             <br>
+            <br>
+            <br>
+            
         <div class="box-content">
             <br>
             <br>
@@ -153,37 +113,39 @@ function load(textoTitulo,textoContenido,Imagen_1,Imagen_2,Imagen_3){
                     <div class="row">
                         <div class="col-lg-6 col-12">
                             <!-- Contenido del contenedor superpuesto arriba a la izquierda -->
-                            <h1 class="text-center text-white">Contactos:</h1>
+                            <strong><p class="text-center text-white">Contactos:</p></strong>
                             <p class="text-center text-white">
-                                talvezarquitectos@gmail.com
+                                talvezarquitectos2@gmail.com
                             </p>
                         </div>
                         <div class="col-lg-6 col-12">
                             <!-- Contenido del contenedor superpuesto abajo a la derecha -->
                             <div class="text-white p-3">
-                                <form id="contactform" action="https://formsubmit.co/davis036@hotmail.com" method="POST">
+                                <form id="contactform" action="https://formsubmit.co/talvezarquitectos2@gmail.com" method="POST">
                                     <div class="mb-3">
                                         <div class="row">
                                             <div class="col">
                                                 <label for="exampleInputEmail1" class="form-label">Nombres:</label>
-                                                <input type="text" class="form-control" placeholder="" aria-label="First name">
+                                                <input type="text" class="form-control" placeholder="" aria-label="First name" name="Nombres:">
                                             </div>
                                             <div class="col">
                                                 <label for="exampleInputEmail1" class="form-label">Apellidos:</label>
-                                                <input type="text" class="form-control" placeholder="" aria-label="Last name">
+                                                <input type="text" class="form-control" placeholder="" aria-label="Last name" name="Apellidos:">
                                             </div>
                                         </div>
                                         <br>
                                         <label for="exampleInputEmail1" class="form-label">Email:</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="Email:">
                                         <br>
                                         <label for="exampleInputEmail1" class="form-label">Mensaje:</label>
                                         <div class="form-floating">
-                                            <textarea class="form-control" placeholder="" id="floatingTextarea2" style="height: 100px"></textarea>
+                                            <textarea class="form-control" placeholder="" id="floatingTextarea2" style="height: 100px" name="Mensaje:"></textarea>
                                                 <!--label for="floatingTextarea2">Comments</label-->
                                         </div>
                                         <br>
-                                        <button type="submit" class="btn btn-secondary">Enviar</button>
+                                        <input type="submit" value="Enviar" class="btn">
+                                        <!--input type="hidden" name="_next" value="https://talvezarquitectos-c4d51.web.app">
+                                        <input type="hidden" name="_captcha" value="false"-->
                                     </div>
                                 </form>
                             </div>
@@ -198,70 +160,27 @@ function load(textoTitulo,textoContenido,Imagen_1,Imagen_2,Imagen_3){
 }
 button.addEventListener('click',e=>{
     main.innerHTML ="" 
-    const context = load("Titulo","texto","../img/imagen1.png","../img/imagen2.jpg","../img/imagen3.jpg")
+    const context = load()
 
     main.innerHTML += context
 
-    const contenedor = document.querySelectorAll('.container-overlay')
-    const reDim_1= document.querySelectorAll('.overlay-top-left')
-    const reDim_2= document.querySelectorAll('.overlay-bottom-right')
+
     const logo= document.querySelector('.logo')
 
     function aplicarMediaQuery() {
         
         if (window.innerWidth >= 768) { // Cambia el ancho según tu necesidad
-            console.log("hello-computer")
+            //console.log("hello-computer")
             if(logo.classList.contains("acomodar")){
                 logo.classList.remove('acomodar')
             }
-            //miDiv.classList.add("elemento-grande");
-            contenedor.forEach(element => {
-                if(element.classList.contains("indice")){
-                    element.classList.toggle("indice")
-                    element.classList.toggle("container-overlay")
-                }
-                
-            });
-            reDim_1.forEach(element => {
-                if(element.classList.contains("col")){
-                    element.classList.toggle("overlay-top-left")
-                    element.classList.toggle("col")
-                } 
-                
-            });
-            reDim_2.forEach(element => {
-                if(element.classList.contains("col")){
-                    element.classList.toggle("overlay-bottom-right")
-                    element.classList.toggle("col")
-                }
-            });
+
         } else {
-            console.log("hello-movil")
+            //console.log("hello-movil")
             if(logo.classList.contains("acomodar")==false){
                 logo.classList.add('acomodar')
             }
-            contenedor.forEach(element => {
-                
-                if(element.classList.contains("container-overlay")){
-                    element.classList.toggle("indice")
-                    element.classList.toggle("container-overlay")
-                }
-            });
 
-            reDim_1.forEach(element => {
-                if(element.classList.contains("overlay-top-left")){
-                    element.classList.toggle("overlay-top-left")
-                    element.classList.toggle("col")
-                }     
-            });
-            reDim_2.forEach(element => {
-
-                if(element.classList.contains("overlay-bottom-right")){
-                    element.classList.toggle("overlay-bottom-right")
-                    element.classList.toggle("col")
-                } 
-                
-            });
         }
     }
     
@@ -280,25 +199,55 @@ document.querySelector("main").addEventListener("click", function(event) {
   if (clickedTarget.classList.contains("proyectos-arquitectura")) {
     
     target = clickedTarget
-    console.log("arq")
+    //console.log("arq")
     document.dispatchEvent(new Event("targetChanged"));
     // Realizar otras acciones
   }
   if (clickedTarget.classList.contains("proyectos-render")) {
     target = clickedTarget
-    console.log("render")
+    //console.log("render")
     document.dispatchEvent(new Event("targetChanged"));
     // Realizar otras acciones
   }
   if (clickedTarget.classList.contains("proyectos-disenio")) {
     target = clickedTarget
-    console.log("diseño")
+    //console.log("diseño")
     document.dispatchEvent(new Event("targetChanged"));
     // Realizar otras acciones
   }
 });
 export {target}
 
+export function Navegacion_inicio(){
+    main.innerHTML ="" 
+    const context = load()
 
+    main.innerHTML += context
+
+    const logo= document.querySelector('.logo')
+
+    function aplicarMediaQuery() {
+        
+        if (window.innerWidth >= 768) { // Cambia el ancho según tu necesidad
+            //console.log("hello-computer")
+            if(logo.classList.contains("acomodar")){
+                logo.classList.remove('acomodar')
+            }
+            //miDiv.classList.add("elemento-grande");
+
+        } else {
+            //console.log("hello-movil")
+            if(logo.classList.contains("acomodar")==false){
+                logo.classList.add('acomodar')
+            }
+
+        }
+    }
+    
+    // Llama a la función al cargar la página y cuando la ventana cambie de tamaño
+    aplicarMediaQuery();
+    window.addEventListener("resize", aplicarMediaQuery);
+
+}
 
 
